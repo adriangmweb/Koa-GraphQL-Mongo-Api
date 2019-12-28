@@ -4,7 +4,7 @@
   "description": "Nodejs Api using Koa framework GraphQL and MongoDB for learning purposes.",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/pm2 start app.js",
+    "start": "node_modules/.bin/pm2 start ./src/app.js",
     "stop": "node_modules/.bin/pm2 kill",
     "logs": "node_modules/.bin/pm2 logs",
     "test": "echo \"Error: no test specified\" && exit 1"
