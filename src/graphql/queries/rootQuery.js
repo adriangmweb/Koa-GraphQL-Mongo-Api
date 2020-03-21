@@ -11,6 +11,12 @@ module.exports = new GraphQLObjectType({
       resolve(parent, args) {
         return Gadget.findById(args.id)
       }
+    },
+    gadgets: {
+      type: new GraphQLList(gadgetGraphQLType),
+      async resolve() {
+        return Gadget.find()
+      }
     }
   }
 })
