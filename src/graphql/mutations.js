@@ -40,6 +40,15 @@ const Mutation = new GraphQLObjectType({
         gadget.price = args.price
         return gadget.save()
       }
+    },
+    removeGadget: {
+      type: gadgetGraphQLType,
+      args: {
+        id: { type: GraphQLString }
+      },
+      async resolve(parent, args) {
+        return Gadget.findByIdAndDelete(args.id)
+      }
     }
   }
 })
