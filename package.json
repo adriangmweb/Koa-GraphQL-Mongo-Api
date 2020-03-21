@@ -1,6 +1,6 @@
 {
   "name": "koa-graphql-mongo-api",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Nodejs Api using Koa framework GraphQL and MongoDB for learning purposes.",
   "main": "index.js",
   "scripts": {
