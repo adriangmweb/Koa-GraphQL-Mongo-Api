@@ -1,5 +1,5 @@
 const { GraphQLObjectType, GraphQLList } = require('graphql');
-const gadgetGraphQLType = require('./../gadgetType');
+const gadgetGraphQLType = require('../types/gadgetType');
 const Gadget = require('../../models/gadgets');
 
 module.exports = {
