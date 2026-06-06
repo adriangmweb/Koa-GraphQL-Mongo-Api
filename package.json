@@ -22,10 +22,14 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "graphql": "14.6.0",
-    "koa": "^2.11.0",
+    "koa": "^2.16.4",
     "koa-graphql": "^0.8.0",
     "koa-mount": "^4.0.0",
-    "mongoose": "5.9.5",
-    "pm2": "4.2.3"
+    "mongoose": "^9.6.3",
+    "pm2": "^7.0.1"
+  },
+  "overrides": {
+    "thenify": "^3.3.1",
+    "ws": "^8.20.1"
   }
 }
